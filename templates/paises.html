@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paises</title>
+  <link rel="stylesheet" href="../statics/styles.css" />
+</head>
+<body>
+  <header class="sub-header">
+    <h1>Paises</h1>
+    <a class="btn small" href="index.html">Inicio</a>
+  </header>
+
+  <main class="container">
+    <section class="api-card">
+      <h2>Busca información por pais</h2>
+      <form id="paises-form">
+        <input type="text" id="pais" placeholder="Ej. España" required />
+        <button class="btn" type="submit">Buscar</button>
+      </form>
+
+      <div id="resultado-pais" class="resultado hidden">
+        <img id="bandera" alt="Bandera" class="flag" />
+        <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+        <p><strong>Capital:</strong> <span id="capital"></span></p>
+        <p><strong>Poblacion:</strong> <span id="poblacion"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/paises.js"></script>
+</body>
+</html>

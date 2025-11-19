@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Criptomonedas</title>
+  <link rel="stylesheet" href="../statics/styles.css" />
+</head>
+<body>
+  <header class="sub-header">
+    <h1>Criptomonedas</h1>
+    <a class="btn small" href="index.html">Inicio</a>
+  </header>
+
+  <main class="container">
+    <section class="api-card">
+      <h2>Selecciona una criptomoneda</h2>
+      <form id="cripto-form">
+        <select id="cripto-select">
+          <option value="bitcoin">Bitcoin (BTC)</option>
+          <option value="ethereum">Ethereum (ETH)</option>
+          <option value="ripple">Ripple (XRP)</option>
+          <option value="cardano">Cardano (ADA)</option>
+          <option value="dogecoin">Dogecoin (DOGE)</option>
+        </select>
+        <button class="btn" type="submit">Obtener</button>
+      </form>
+
+      <div id="resultado-cripto" class="resultado hidden">
+        <p><strong>Precio (USD):</strong> $<span id="precio"></span></p>
+        <p><strong>Cambio 24h:</strong> <span id="cambio24"></span> %</p>
+        <p><strong>Market Cap:</strong> $<span id="marketcap"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/cripto.js"></script>
+</body>
+</html>

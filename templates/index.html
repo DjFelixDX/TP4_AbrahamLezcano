@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyecto Apis</title>
+  <link rel="stylesheet" href="../statics/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="project-title">Proyecto APIs</h1>
+    <p id="greeting-area" class="greeting">¡Bienvenido/a! <span id="user-name">Invitado</span></p>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Web para usar varias APIs gratuitas</h2>
+      <p>Usa los botones para explorar las diferentes apis gratuitas.</p>
+    </section>
+
+    <section class="buttons-grid">
+      <a class="btn card" href="clima.html">API del Clima</a>
+      <a class="btn card" href="paises.html">API de Paises</a>
+      <a class="btn card" href="pokemon.html">API de Pokemon</a>
+      <a class="btn card" href="rick.html">API Rick & Morty</a>
+      <a class="btn card" href="cripto.html">API Criptomonedas</a>
+      <a class="btn card home" href="index.html">Inicio</a>
+    </section>
+  </main>
+
+  <div id="welcome-modal" class="modal hidden">
+    <div class="modal-content animate-in">
+      <h3>¡Bienvenido/a!</h3>
+      <p>Por favor introduce tu nombre y apellido:</p>
+      <form id="welcome-form">
+        <input type="text" id="firstName" placeholder="Nombre" required />
+        <input type="text" id="lastName" placeholder="Apellido" required />
+        <div class="modal-actions">
+          <button type="submit" class="btn">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/script_bienvenida.js"></script>
+</body>
+</html>
